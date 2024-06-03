@@ -1,0 +1,28 @@
+Realiza un programa que puedas realizar todas las posibles operaciones sobre la base de datos Agenda 1, con un programa que permita hacer todas las acciones posibles, es decir, operaciones CRUD sobre todas las tablas, así como modificar insertar contacto para que provincia y categoría se pueda elegir entre un menú
+
+ 
+
+Diseño de Base de Datos
+Tabla dbo.categorias:
+
+Categoria (PK, char(4), not null)
+Descripcion (varchar(50), null)
+Tabla dbo.contactos:
+
+Id_contacto (PK, int, not null)
+Nombre (varchar(25), not null)
+Apellidos (varchar(50), not null)
+DNI (char(10), null)
+Telefono (char(9), null)
+Ecorreo (varchar(50), null)
+Fechacumple (date, null)
+Direccion (varchar(50), null)
+Poblacion (varchar(50), null)
+Provincia (FK, int, null)
+CodigoPostal (char(5), null)
+Categoria (FK, char(4), not null)
+Deuda (int, null)
+Tabla dbo.provincias:
+
+Provincia (PK, int, not null)
+NombreProvincia (varchar(40), null)
